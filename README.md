@@ -82,8 +82,6 @@ Roles & permissions.
 ## Commands executed
 
 ```bash
-#
-
 # Install CASL to handle with permissions
 npm i @casl/ability  
 
@@ -92,5 +90,8 @@ cd apps/api && npm i tsx @types/node -D
 
 # Install zod
 cd packages/auth && npm i zod 
+
+# Install Fastify and more
+cd apps/api && npm i fastify fastify-type-provider-zod @fastify/cors zod
 ```
 ---

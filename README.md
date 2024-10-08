@@ -133,7 +133,7 @@ Roles & permissions.
 - Only administrators and project authors may update/delete the project
 - Members can leave their own organization
 
-## Commands executed
+## Commands executed <a name = "commands"></a>
 
 ```bash
 # Install CASL to handle with permissions
@@ -144,18 +144,6 @@ cd apps/api && npm i tsx @types/node -D
 
 # Install zod
 cd packages/auth && npm i zod 
-
-# Install Fastify and more
-cd apps/api && npm i fastify fastify-type-provider-zod @fastify/cors zod
-
-# Install Prisma
-cd apps/api && npm i prisma -D  
-
-# Inicialize Prisma
-cd apps/api && npx prisma init  
-
-# Run Prisma migrations
-cd apps/api && npx prisma migrate dev
 ```
 
 ## Technologies used <a name="technologies"></a>

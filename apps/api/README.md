@@ -46,6 +46,9 @@ npx prisma migrate dev
 
 # Install bcryptjs
 npm i bcryptjs && npm i @types/bcryptjs -D
+
+# Install fakerjs
+npm i @faker-js/faker -D
 ```
 
 ---

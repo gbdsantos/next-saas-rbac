@@ -2,6 +2,7 @@
   "name": "@saas/api",
   "version": "1.0.0",
   "scripts": {
+    "db:seed": "tsx prisma/seed.ts",
     "start:dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "@faker-js/faker": "9.0.3",
     "@saas/eslint-config": "*",
     "@saas/prettier": "*",
     "@saas/tsconfig": "*",

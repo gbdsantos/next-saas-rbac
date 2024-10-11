@@ -49,6 +49,12 @@ npm i bcryptjs && npm i @types/bcryptjs -D
 
 # Install fakerjs
 npm i @faker-js/faker -D
+
+# Install @fastify/swagger
+npm i @fastify/swagger
+
+# Install @fastify/swagger-ui
+npm i @fastify/swagger-ui
 ```
 
 ---

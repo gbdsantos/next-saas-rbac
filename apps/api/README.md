@@ -58,6 +58,9 @@ npm i @fastify/swagger-ui
 
 # Install @fastify/jwt
 npm i @fastify/jwt
+
+# Install fastify-plugin 
+npm i fastify-plugin 
 ```
 
 ---

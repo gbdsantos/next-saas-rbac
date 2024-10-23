@@ -29,3 +29,25 @@ Content-Type: application/json
 GET {{baseUrl}}/profile
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name request_password_recover
+POST {{baseUrl}}/password/recover
+Content-Type: application/json
+
+{
+  "email": "guilherme@acme.com"
+}
+
+###
+
+# @name reset_password
+POST {{baseUrl}}/password/reset
+Content-Type: application/json
+
+{
+  "code": "226ede3c-0bdb-43e1-a87b-9bc34a248730",
+  "password": "123456"
+}
+

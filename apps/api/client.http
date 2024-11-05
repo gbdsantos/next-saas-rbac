@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3333
-@token = {{create_session.response.body.token}}
+@token = "{{create_session.response.body.token}}"
 
 # @name create_user
 POST {{baseUrl}}/users
@@ -21,6 +21,17 @@ Content-Type: application/json
   "name": "Guilherme Bezerra",
   "email": "guilherme@acme.com",
   "password": "123456"
+}
+
+###
+
+# @name create_session_github
+# @prompt code Get code in https://github.com/login/oauth/authorize?client_id=your-app-client-id&redirect_uri=http://localhost:3000/api/auth/callback&scope=user:email
+POST {{baseUrl}}/sessions/github
+Content-Type: application/json
+
+{
+  "code": {{code}}
 }
 
 ###

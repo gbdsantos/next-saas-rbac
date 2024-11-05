@@ -144,6 +144,10 @@ cd apps/api && npm i tsx @types/node -D
 
 # Install zod
 cd packages/auth && npm i zod 
+
+# Install @t3-oss/env-nextjs 
+# this package allow separate environment variables of server and client
+cd packages/env && npm i @t3-oss/env-nextjs & npm i @types/node -D
 ```
 
 ## Technologies used <a name="technologies"></a>

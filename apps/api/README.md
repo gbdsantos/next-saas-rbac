@@ -61,6 +61,9 @@ npm i @fastify/jwt
 
 # Install fastify-plugin 
 npm i fastify-plugin 
+
+# Install dotenv-cli
+npm i dotenv-cli -D
 ```
 
 ---

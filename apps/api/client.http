@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3333
-@token = "{{create_session.response.body.token}}"
+@token = {{create_session.response.body.token}}
 
 # @name create_user
 POST {{baseUrl}}/users
@@ -62,3 +62,22 @@ Content-Type: application/json
   "password": "123456"
 }
 
+###
+
+# @name create_organization
+POST {{baseUrl}}/organization
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "name": "GBDSANTOS", 
+  "domain": "gbdsantos.dev",
+  "shouldAttachUsersByDomain": true 
+}
+
+###
+
+# @name get_membership
+GET {{baseUrl}}/organizations/{slug}/membership
+Content-Type: application/json
+Authorization: Bearer {{token}}

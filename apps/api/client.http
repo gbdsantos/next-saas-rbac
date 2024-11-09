@@ -81,3 +81,20 @@ Authorization: Bearer {{token}}
 GET {{baseUrl}}/organizations/{slug}/membership
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name get_organization_by_user
+# Get organization where user is a member
+GET {{baseUrl}}/organizations
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+# @name get_organizations
+# Get details from organization
+# @prompt slug Add url slug of your organization
+GET {{baseUrl}}/organizations/{{slug}}
+Content-Type: application/json
+Authorization: Bearer {{token}}

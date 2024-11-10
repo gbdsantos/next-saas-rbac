@@ -98,3 +98,18 @@ Authorization: Bearer {{token}}
 GET {{baseUrl}}/organizations/{{slug}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name update_organization
+# Update organization details
+# @prompt slug Add url slug of your organization
+POST {{baseUrl}}/organizations/{{slug}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "name": "GBDSANTOS", 
+  "domain": "gbdsantos.dev",
+  "shouldAttachUsersByDomain": true 
+}

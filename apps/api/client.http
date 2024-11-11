@@ -104,7 +104,7 @@ Authorization: Bearer {{token}}
 # @name update_organization
 # Update organization details
 # @prompt slug Add url slug of your organization
-POST {{baseUrl}}/organizations/{{slug}}
+PUT {{baseUrl}}/organizations/{{slug}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -113,3 +113,12 @@ Authorization: Bearer {{token}}
   "domain": "gbdsantos.dev",
   "shouldAttachUsersByDomain": true 
 }
+
+###
+
+# @name shutdown_organization
+# Shutdown organization details
+# @prompt slug Add url slug of your organization
+DELETE {{baseUrl}}/organizations/{{slug}}
+Content-Type: application/json
+Authorization: Bearer {{token}}

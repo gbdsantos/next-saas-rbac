@@ -122,3 +122,17 @@ Authorization: Bearer {{token}}
 DELETE {{baseUrl}}/organizations/{{slug}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name create_project
+# Update organization details
+# @prompt slug Add url slug of your organization
+POST {{baseUrl}}/organizations/{{slug}}/projects
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "name": "Project test 1", 
+  "description": "Sample project."
+}

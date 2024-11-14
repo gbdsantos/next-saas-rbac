@@ -33,8 +33,7 @@ export async function deleteProject(app: FastifyInstance) {
         },
       },
       async (request, reply) => {
-        const { slug } = request.params
-        const { projectId } = request.params
+        const { slug, projectId } = request.params
 
         const userId = await request.getCurrentUserId()
         const { organization, membership } =

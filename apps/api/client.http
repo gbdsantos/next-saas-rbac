@@ -136,3 +136,12 @@ Authorization: Bearer {{token}}
   "name": "Project test 1", 
   "description": "Sample project."
 }
+
+###
+
+# @name delete_project
+# @prompt slug Add url slug of your organization
+# @prompt projectId Add project id of your project
+DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}

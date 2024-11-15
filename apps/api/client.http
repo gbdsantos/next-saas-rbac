@@ -142,7 +142,7 @@ Authorization: Bearer {{token}}
 # @name get_project
 # @prompt slug Add url slug of your organization
 # @prompt projectSlug Add project slug of your project
-DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectSlug}}
+GET {{baseUrl}}/organizations/{{slug}}/projects/{{projectSlug}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -150,6 +150,29 @@ Authorization: Bearer {{token}}
 
 # @name get_projects
 # @prompt slug Add url slug of your organization
-DELETE {{baseUrl}}/organizations/{{slug}}/projects
+GET {{baseUrl}}/organizations/{{slug}}/projects
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+# @name update_project
+# @prompt slug Add url slug of your organization
+# @prompt projectId Add project slug of your project
+PUT {{baseUrl}}/organizations/{{slug}}/projects/{{projectId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "name": "Project updated 1", 
+  "description": "Sample project, updated description."
+}
+
+###
+
+# @name delete_project
+# @prompt slug Add url slug of your organization
+# @prompt projectId Add project slug of your project
+DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectId}}
 Content-Type: application/json
 Authorization: Bearer {{token}}

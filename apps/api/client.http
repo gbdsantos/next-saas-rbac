@@ -139,9 +139,17 @@ Authorization: Bearer {{token}}
 
 ###
 
-# @name delete_project
+# @name get_project
 # @prompt slug Add url slug of your organization
-# @prompt projectId Add project id of your project
-DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectId}}
+# @prompt projectSlug Add project slug of your project
+DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectSlug}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+# @name get_projects
+# @prompt slug Add url slug of your organization
+DELETE {{baseUrl}}/organizations/{{slug}}/projects
 Content-Type: application/json
 Authorization: Bearer {{token}}

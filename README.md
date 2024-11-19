@@ -82,7 +82,7 @@ npm run start:dev
 ### Members
 
 - [x] It should be able to get organization members
-- [ ] It should be able to update a member role
+- [x] It should be able to update a member role
 
 ### Projects
 

@@ -184,3 +184,16 @@ Authorization: Bearer {{token}}
 GET {{baseUrl}}/organizations/{{slug}}/members
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name update_member
+# @prompt slug Add url slug of your organization
+# @prompt memberId Add member id of your organization
+PUT {{baseUrl}}/organizations/{{slug}}/members/{{memberId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "role": "ADMIN", 
+}

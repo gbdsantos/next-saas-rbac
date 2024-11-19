@@ -176,3 +176,11 @@ Authorization: Bearer {{token}}
 DELETE {{baseUrl}}/organizations/{{slug}}/projects/{{projectId}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name get_members
+# @prompt slug Add url slug of your organization
+GET {{baseUrl}}/organizations/{{slug}}/members
+Content-Type: application/json
+Authorization: Bearer {{token}}

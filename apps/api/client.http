@@ -197,3 +197,13 @@ Authorization: Bearer {{token}}
 { 
   "role": "ADMIN", 
 }
+
+###
+
+# @name remove_member_organization
+# Remove member of organization //:slug/members/memberId
+# @prompt memberId Add memberId in your organization
+# @prompt slug Add url slug of your organization
+DELETE {{baseUrl}}/organizations/{{slug}}/members/{{memberId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}

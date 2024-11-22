@@ -83,6 +83,7 @@ npm run start:dev
 
 - [x] It should be able to get organization members
 - [x] It should be able to update a member role
+- [x] It should be able to remove a member in organization
 
 ### Projects
 

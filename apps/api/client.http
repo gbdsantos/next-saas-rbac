@@ -207,3 +207,19 @@ Authorization: Bearer {{token}}
 DELETE {{baseUrl}}/organizations/{{slug}}/members/{{memberId}}
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# Invites Routes
+
+# @name create_invite
+# Create invite
+# @prompt slug Add url slug of your organization
+POST {{baseUrl}}/organizations/{{slug}}/invites
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{ 
+  "email": "guilherme@example.com.br", 
+  "role": "ADMIN"
+}

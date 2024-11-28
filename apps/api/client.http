@@ -223,3 +223,11 @@ Authorization: Bearer {{token}}
   "email": "guilherme@example.com.br", 
   "role": "ADMIN"
 }
+
+###
+
+# @name get_invite
+# Create invite
+# @prompt inviteId Add inviteId of your invite
+POST {{baseUrl}}/invites/{{{{inviteId}}}}
+Content-Type: application/json

@@ -231,3 +231,12 @@ Authorization: Bearer {{token}}
 # @prompt inviteId Add inviteId of your invite
 POST {{baseUrl}}/invites/{{{{inviteId}}}}
 Content-Type: application/json
+
+###
+
+# @name get_invites
+# Get organization invites
+# @prompt slug Add url slug of your organization
+GET {{baseUrl}}/organizations/{{slug}}/invites
+Content-Type: application/json
+Authorization: Bearer {{token}}

@@ -247,4 +247,10 @@ Authorization: Bearer {{token}}
 # @prompt inviteId Add inviteId
 POST {{baseUrl}}/invites/{{inviteId}}/accept
 Content-Type: application/json
-Authorization: Bearer {{token}}
+
+###
+
+# @name reject_invite
+# @prompt inviteId Add inviteId
+DELETE {{baseUrl}}/invites/{{inviteId}}/reject
+Content-Type: application/json

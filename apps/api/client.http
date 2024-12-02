@@ -240,3 +240,11 @@ Content-Type: application/json
 GET {{baseUrl}}/organizations/{{slug}}/invites
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name accept_invite
+# @prompt inviteId Add inviteId
+POST {{baseUrl}}/invites/{{inviteId}}/accept
+Content-Type: application/json
+Authorization: Bearer {{token}}

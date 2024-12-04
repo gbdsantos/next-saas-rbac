@@ -269,3 +269,11 @@ Content-Type: application/json
 GET {{baseUrl}}/pending-invites
 Content-Type: application/json
 Authorization: Bearer {{token}}
+
+###
+
+# @name get_organization_billing
+# @prompt slug Add url slug of your organization
+GET {{baseUrl}}/organizations/{{slug}}/billing
+Content-Type: application/json
+Authorization: Bearer {{token}}

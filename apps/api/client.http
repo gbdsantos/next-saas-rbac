@@ -254,3 +254,11 @@ Content-Type: application/json
 # @prompt inviteId Add inviteId
 DELETE {{baseUrl}}/invites/{{inviteId}}/reject
 Content-Type: application/json
+
+###
+
+# @name revoke_invite
+# @prompt inviteId Add inviteId
+# @prompt slug Add url slug of your organization
+DELETE {{baseUrl}}/organizations/{{slug}}/invites/{{inviteId}}
+Content-Type: application/json

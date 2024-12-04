@@ -75,9 +75,9 @@ npm run start:dev
 
 ### Invites
 
-- [ ] It should be able to invite a new member (e-mail, role)
-- [ ] It should be able to accept an invite
-- [ ] It should be able to revoke a pending invite
+- [x] It should be able to invite a new member (e-mail, role)
+- [x] It should be able to accept an invite
+- [x] It should be able to revoke a pending invite
 
 ### Members
 

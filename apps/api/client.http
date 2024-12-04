@@ -262,3 +262,10 @@ Content-Type: application/json
 # @prompt slug Add url slug of your organization
 DELETE {{baseUrl}}/organizations/{{slug}}/invites/{{inviteId}}
 Content-Type: application/json
+
+###
+
+# @name get_pending_invites
+GET {{baseUrl}}/pending-invites
+Content-Type: application/json
+Authorization: Bearer {{token}}

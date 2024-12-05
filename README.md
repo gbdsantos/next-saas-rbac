@@ -8,6 +8,10 @@
     <img alt="Fastify logo image" src="https://img.shields.io/badge/fastify-20232A?style=flat&logo=fastify&logoColor=white">
   </a>
 
+  <a href="https://nextjs.org">
+    <img alt="Next logo image" src="https://img.shields.io/badge/next-v15.0.3-43853D?style=flat&logo=next.js&logoColor=white&labelColor=20232A&color=5a5a5a">
+  </a>
+
   <a href="https://nodejs.org">
     <img alt="Node.js logo image" src="https://img.shields.io/badge/node.js-v20.16.0-43853D?style=flat&logo=node.js&logoColor=white&labelColor=43853D&color=5a5a5a">
   </a>
@@ -154,6 +158,7 @@ cd packages/env && npm i @t3-oss/env-nextjs & npm i @types/node -D
 ## Technologies used <a name="technologies"></a>
 
 - [Fastify](https://fastify.io "Fastify - Fast and low overhead web framework, for Node.js") - Fast and low overhead web framework, for Node.js
+- [Next](https://nextjs.org "Next - The React Framework for the Web") - The React Framework for the Web
 - [Node.js](https://nodejs.org "Node.js") - JavaScript runtime environment / plataform
 - [Prisma](https://www.prisma.io "Prisma ORM") - ORM (Object Mapping Relation) for Node.js and TypeScript
 - [TypeScript](https://www.typescriptlang.org "TypeScript") - Programming language and superset for JavaScript

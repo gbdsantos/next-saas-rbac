@@ -12,6 +12,10 @@
     <img alt="Node.js logo image" src="https://img.shields.io/badge/node.js-v20.16.0-43853D?style=flat&logo=node.js&logoColor=white&labelColor=43853D&color=5a5a5a">
   </a>
 
+  <a href="https://ui.shadcn.com">
+    <img alt="shadcn/ui logo image" src="https://img.shields.io/badge/shadcn-v2.1.6-43853D?style=flat&logo=shadcnui&logoColor=white&labelColor=20232A&color=5a5a5a">
+  </a>
+
   <a href="https://www.typescriptlang.org">
     <img alt="TypeScript logo image" src="https://img.shields.io/badge/typescript-007acc?style=flat&logo=typescript&logoColor=white">
   </a>
@@ -36,6 +40,12 @@ bun dev
 ```bash
 # Create Next 15 project with monorepo with TurboRepo
 npx create-next-app --turbo
+
+# Install shadcn/ui to Nextjs 15
+npx shadcn@latest init
+
+# Install some shadcn/ui components
+npx shadcn@latest add alert button input label separator
 ```
 
 ---
